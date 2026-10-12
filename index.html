@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chess Battles uploader: privacy policy</title>
+<style>
+  :root { --bg: #fbfaf7; --fg: #1d1d1b; --muted: #5f5d58; --line: #e2dfd8; --accent: #2f6f4e; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161615; --fg: #ecebe7; --muted: #a6a39c; --line: #33322f; --accent: #7cc49b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  ul { padding-left: 1.3em; }
+  li { margin: 4px 0; }
+  code { font-size: .92em; }
+  .box { border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; margin: 20px 0; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Chess Battles uploader</h1>
+<p class="muted">The upload tool of the Chess Battles YouTube channel</p>
+
+<div class="box">
+  <p><strong>Chess Battles</strong> is a YouTube channel with online blitz chess games between two streamers: both
+  players' cameras, one board, an engine evaluation and English subtitles. Every video credits both streamers
+  and links to their channels.</p>
+  <p><strong>Chess Battles uploader</strong> is a private command-line tool that only the channel owner uses, on the
+  owner's own computer. It uploads the channel's own videos, their titles, descriptions, tags, subtitle tracks and
+  thumbnails to the Chess Battles channel through the YouTube API Services. It has no website, no user accounts and
+  no other users, and it is not offered to anyone else.</p>
+</div>
+
+<h2 id="privacy">Privacy policy</h2>
+<p class="muted">Effective October 12, 2026</p>
+
+<p>This policy describes how Chess Battles uploader (“the tool”) uses data. The tool uses
+<strong>YouTube API Services</strong>. By using YouTube through the tool you are bound by the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of your data is described
+in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>Who uses the tool</h2>
+<p>Only the owner of the Chess Battles channel. The tool signs in with Google OAuth as the channel owner and acts only
+on that channel. No one else can sign in to it, and it collects no data from viewers or from any other user.</p>
+
+<h2>What data the tool accesses</h2>
+<ul>
+  <li><strong>The channel owner's YouTube account</strong>, through the OAuth permissions
+    <code>youtube.upload</code> and <code>youtube.force-ssl</code>: to upload the channel's videos, set their titles,
+    descriptions, tags, privacy status and thumbnails, and add, list or replace their subtitle tracks.</li>
+</ul>
+
+<h2>What data the tool stores</h2>
+<ul>
+  <li>The OAuth access and refresh token of the channel owner's sign-in, in a local file on the owner's computer.</li>
+  <li>For each uploaded video: its YouTube video id, link, upload time, privacy status, and which subtitle tracks and
+    thumbnail were sent, in local files on the owner's computer.</li>
+</ul>
+<p>Nothing is stored on any server run by the tool (there is none). The tool uses no cookies, no analytics and no
+tracking.</p>
+
+<h2>How the data is used and shared</h2>
+<p>The data is used only to upload and manage the Chess Battles channel's own videos and to credit the streamers in
+them. It is not sold, not shared with anyone, not used for advertising, and not combined with data from other
+sources. The only party that receives data from the tool is Google, through the YouTube API Services.</p>
+
+<h2>Keeping and deleting data</h2>
+<ul>
+  <li>Stored data is kept only as long as it is needed to manage the uploaded videos. Data about a video is deleted
+    when the video is deleted from the channel.</li>
+  <li>Data obtained from the YouTube API Services is refreshed or deleted as the
+    <a href="https://developers.google.com/youtube/terms/developer-policies">YouTube API Services Developer Policies</a>
+    require.</li>
+  <li>The channel owner can revoke the tool's access to the account at any time on the
+    <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>; the stored
+    sign-in token then stops working, and the local file that holds it can be deleted.</li>
+  <li>A streamer who wants their channel links removed from the tool's data, or a video taken down, can ask through
+    the contact below; the request is handled promptly.</li>
+</ul>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version is published on this page with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests about this policy: benpok21@gmail.com, or through the Chess Battles channel's
+<a href="https://www.youtube.com/@Matein-2">About page</a>.</p>
+
+</main>
+</body>
+</html>
